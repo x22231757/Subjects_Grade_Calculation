@@ -1,0 +1,32 @@
+body {
+    background-color: lightblue;
+    margin: 50px;
+    padding: 25px;
+    float: left;
+}
+  
+
+h1{
+    border:double ;
+    border-radius: 5px;
+    margin: 75px;
+    padding: 50px;
+}
+
+.row{
+    border:double ;
+    border-radius: 5px;
+}
+
+button{
+    margin: 75px;
+    padding: 50px;
+}
+
+input{
+    margin: 15px;
+    padding: 10px;
+}
+
+
+    
