@@ -1,19 +1,15 @@
 var container = document.getElementById("container");
-//var userNumberOfSubjects = parseInt(document.getElementById("nsubj").value);
 document.getElementById("ask").style.visibility = "hidden";
 
 function getNumberOfGradeFields(){
 			//Get the input from user
 			var userNumberOfSubjects = parseInt(document.getElementById("nsubj").value);
-			//var container = document.getElementById("container");
-
+			
 			if (userNumberOfSubjects==0) {
 				document.getElementById("ask").style.visibility = "hidden";
 				document.getElementById("form1").innerHTML ="<br></br><h1>You have no subjects, no need to calculate average grade</h1>";
 				document.getElementById("form1").innerHTML +="<br></br><button onClick='window.location.reload()'>Go back</button>";
 
-				
-				
 			}else if(userNumberOfSubjects<0) {
 				document.getElementById("ask").style.visibility = "hidden";
 				document.getElementById("form1").innerHTML ="<br></br><h1>Please enter a vaid number (0 or bigger).</h1>";
@@ -60,8 +56,6 @@ function getNumberOfGradeFields(){
 
 
 function btnCalcGrade_Click(userNumberOfSubjects){
-	//var userNumberOfSubjects = parseInt(document.getElementById("nsubj").value);
-	//var container = document.getElementById("form1");
 
 	// Print statement to output when they put in
 	document.getElementById("form2").innerHTML +="<br></br><h1>Your marks are:</h1>";
@@ -115,22 +109,6 @@ function btnCalcGrade_Click(userNumberOfSubjects){
 		document.getElementById("form2").innerHTML +="<br></br>";
 
 	}
-
-
-
-
-	//container.appendChild(document.createTextNode("Your grade average result is " + String(average_grade)));
-	//container.appendChild(document.createElement("p");
-
-	//while (container.hasChildNodes()) {
-	//container.removeChild(container.lastChild);
-	//}
-
-	
-
-	//const para = document.createElement("p");
-	//para.innerText = "Your grade average result is " + average_grade;
-	//container.appendChild(para);
 
 
 	document.getElementById("form1").style.visibility = "hidden";
